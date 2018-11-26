@@ -10,7 +10,7 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details at: http://www.gnu.org/licenses/lgpl.html
- *
+ * 
  * @package Browser_Detection
  * @version 2.5.1
  * @last-modified November 28, 2016
