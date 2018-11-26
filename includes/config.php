@@ -3,7 +3,7 @@ ob_start();
 session_start();
 
 //set timezone
-date_default_timezone_set('Europe/London');
+date_default_timezone_set('Europe/Berlin');
 
 //database credentials
 define('DBHOST','localhost');
