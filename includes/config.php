@@ -13,7 +13,7 @@ define('DBNAME','yourconfession');
 
 //application address
 define('DIR','https://deinebeichte.com/');
-define('SITEEMAIL','info@deinebeichte.com');
+define('SITEEMAIL','info@deinebeichte.com ');
 
 try {
 
