@@ -11,13 +11,13 @@
 * Tags: html, themplate, Ela Admin
 --------------------------------------------------------- */
 
-@import "variables"; 
+@import "variables";
 @import "todo-list";
 
-.transition { 
+.transition {
     transition: all 0.3s ease;
-} 
-body { 
+}
+body {
     display: table;
     font-family: $default-font;
     font-size: 16px;
@@ -39,7 +39,7 @@ a, button {
     text-decoration: none;
     outline: none!important;
     color: #878787;
- 
+
     transition: all 0.25s ease;
 
 }
@@ -68,7 +68,7 @@ ol {
 button:focus {
     box-shadow: none !important;
     outline: 0;
-} 
+}
 .btn.disabled, .btn:disabled {
     cursor: not-allowed;
 }
@@ -76,8 +76,8 @@ img {
     max-width: 100%;
 }
 .modal-header {
-    display: block; 
-} 
+    display: block;
+}
 
 .mb-0 {  margin-bottom: 0; }
 
@@ -141,7 +141,7 @@ canvas {
         left: -1px;
     }
 
-    tr{ 
+    tr{
         th {
             background: #e8e9ef;
         }
@@ -171,10 +171,10 @@ canvas {
 
 
 .messenger-box {
-    // height: 450px; 
+    // height: 450px;
     padding-top: 15px;
     ul{
-        padding-left: 0; 
+        padding-left: 0;
         display: inline-block;
         width: 100%;
         padding-bottom: 15px;
@@ -183,10 +183,10 @@ canvas {
         list-style:none;
         padding-bottom: 20px;
     }
-    .msg-container { 
-         
+    .msg-container {
+
     }
-    .avatar {  
+    .avatar {
         width: 64px;
         float: left;
         img {
@@ -198,11 +198,11 @@ canvas {
             padding-top: 5px;
         }
     }
-    .msg-box {   margin-left: 84px; } 
-    .inner-box { 
+    .msg-box {   margin-left: 84px; }
+    .inner-box {
         position: relative;
         border-radius: 10px;
-        background-color: rgb(241, 242, 247); 
+        background-color: rgb(241, 242, 247);
         font-size: 14px;
         color : #9aa0a4;
         padding: 14px 20px;
@@ -217,7 +217,7 @@ canvas {
             top: 10px;
             left: -18px;
             width: 18px;
-            height: 18px; 
+            height: 18px;
             border-style: solid;
             border-width: 9px;
             border-color: transparent rgb(241, 242, 247) transparent transparent;
@@ -242,15 +242,15 @@ canvas {
     .send-mgs{
         margin-top: 20px;
         margin-bottom: 9px;
-        position: relative; 
+        position: relative;
         .yourmsg {
             margin-right: 55px;
-            input { 
+            input {
                 border: 1px solid #eceff1;
-                height: 40px;  
-                line-height: 40px; 
+                height: 40px;
+                line-height: 40px;
                 font-size: 14px;
-                border-radius: 7px; 
+                border-radius: 7px;
             }
         }
         .msg-send-btn {
@@ -265,7 +265,7 @@ canvas {
             position: absolute;
             right: 0;
             top: 0;
-        } 
+        }
     }
 }
 
@@ -273,16 +273,16 @@ canvas {
 /* Global Styles */
 
 /* Main Styles */
- 
+
 aside.left-panel {
-    background: $menu-bg; 
+    background: $menu-bg;
     height: 100vh;
     // min-height: 100%;
     padding: 0;
     vertical-align: top;
     width: 280px;
     // transition: all 0.25s ease;
-    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); 
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -301,8 +301,8 @@ aside.left-panel {
         margin-left: 83px;
     }
 }
-  
-  
+
+
 
 .navbar {
     background: $menu-bg;
@@ -311,7 +311,7 @@ aside.left-panel {
     display: inline-block;
     margin: 0;
     padding: 0;
-    vertical-align: top; 
+    vertical-align: top;
     .main-menu {
         float: left;
         padding: 0;
@@ -332,7 +332,7 @@ aside.left-panel {
     .navbar-nav {
         float: none;
         position: relative;
-        >li { 
+        >li {
             padding-left: 30px;
             padding-right:30px;
             &.active {
@@ -352,7 +352,7 @@ aside.left-panel {
             >a {
                 background: none !important;
                 color: $menu-color;
-                display: inline-block; 
+                display: inline-block;
                 font-size: 14px;
                 line-height: 26px;
                 padding: 10px 0;
@@ -374,7 +374,7 @@ aside.left-panel {
                     font-size: 14px;
                 }
                 .badge {
-                    border-radius: 0; 
+                    border-radius: 0;
                     font-weight: 600;
                     float: right;
                     margin: 6px 0 0 0;
@@ -386,20 +386,20 @@ aside.left-panel {
                 a {
                     line-height: 30px;
                     &:before {
-                        content: ""; 
+                        content: "";
                         position: absolute;
                         top: 23px;
                         right: 0;
                         width: 8px;
-                        height: 8px;  
+                        height: 8px;
                         border-style: solid;
                         border-width: 1px;
                         border-color: $menu-color $menu-color transparent transparent;
                         transform:rotate(45deg);
-  
+
                         transition: all .25s ease;
                     }
-                    &:hover:before { 
+                    &:hover:before {
                         border-color: $menu-active $menu-active transparent transparent;
                     }
                 }
@@ -441,7 +441,7 @@ aside.left-panel {
                         top: 20px;
                         right: -5px;
                     }
-                    a:hover:before { 
+                    a:hover:before {
                         border-color: transparent $menu-active $menu-active  transparent;
                     }
                     .sub-menu {
@@ -484,10 +484,10 @@ aside.left-panel {
     .sub-menu {
        .subtitle {
             display: block;
-            font-size: 15px;  
+            font-size: 15px;
             line-height: 35px;
             color: $menu-color;
-            border-bottom: 1px solid rgba($menu-color, .15); 
+            border-bottom: 1px solid rgba($menu-color, .15);
         }
         i {
             left: 15px !important;
@@ -514,7 +514,7 @@ aside.left-panel {
         .navbar-brand {
             display: none;
             &.hidden {
-                display: block !important; 
+                display: block !important;
                 text-align: center;
                 width: 100%;
                 img {
@@ -530,12 +530,12 @@ aside.left-panel {
                 text-align: center;
             }
         }
-        .navbar-nav { 
+        .navbar-nav {
             &:before {
                 display: none !important;
-            } 
+            }
             li {
-                position: relative; 
+                position: relative;
                 padding: 0 15px;
                 a {
                     font-size: 0;
@@ -592,8 +592,8 @@ aside.left-panel {
                         overflow: visible;
                         .sub-menu {
                             position: absolute !important;
-                            width: 180px; 
-                            box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); 
+                            width: 180px;
+                            box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
                         }
                     }
                 }
@@ -627,16 +627,16 @@ aside.left-panel {
 
 /* Right panel */
 
-.right-panel {  
+.right-panel {
     background: $container-bg ;
-    margin-left: 280px; 
+    margin-left: 280px;
     margin-top: 55px;
-    // transition: all .25s ease; 
+    // transition: all .25s ease;
     .top-left {
         width: 350px;
         float: left;
     }
-    .top-rigth { 
+    .top-rigth {
         float: left;
     }
 
@@ -681,39 +681,39 @@ aside.left-panel {
         }
     }
 }
- 
+
 .right-panel {
     header.header {
         background: $header-bg;
         border-bottom: 1px solid #e8e9ed;
         box-shadow: none;
-        clear: both; 
-        padding: 0 30px; 
+        clear: both;
+        padding: 0 30px;
         height: 55px;
         position: fixed;
         left: 280px;
         left: 0;
         right: 0;
-        top: 0;  
+        top: 0;
         z-index: 999;
-    } 
+    }
     .navbar-brand {
         width: 250px;
         display: inline-block;
     }
     .menutoggle {
         padding-top: 7px;
-    } 
+    }
     .navbar-header {
         width: 100%;
-        background-color: $white; 
-        padding: 0 1.25em 0 0;  
+        background-color: $white;
+        padding: 0 1.25em 0 0;
         > a {
             display: inline-block;
         }
     }
-    .navbar-brand {  
-        line-height: 42px;  
+    .navbar-brand {
+        line-height: 42px;
         img {
             max-width: 145px;
         }
@@ -737,22 +737,22 @@ aside.left-panel {
 header.fixed-top {
     background: #fff;
     padding: 20px;
-} 
+}
 .menutoggle {
-    background-color: transparent; 
+    background-color: transparent;
     color: $header-icon !important;
     cursor: pointer;
     font-size: 1em;
     height: 40px;
     line-height: 40px;
     width: 40px;
-    display: block; 
+    display: block;
     text-align: right;
     //padding-left: 60px;
     // margin: -20px 0 0;
     // top: 50%;
     // right: 1.25em;
-    // position: absolute; 
+    // position: absolute;
 }
 // .open .menutoggle i:before {
 //     content: "\f0a4";
@@ -761,7 +761,6 @@ header.fixed-top {
     background: transparent;
     border: none;
     color: $header-icon;
-    cursor: pointer;
     font-size: 16px;
     line-height: 55px;
     padding: 0;
@@ -822,7 +821,7 @@ header .form-inline {
             display: none;
         }
     }
-} 
+}
 .header-left {
     display: inline-block;
 }
@@ -904,25 +903,25 @@ header .form-inline {
                     padding: 0;
                     text-overflow: ellipsis;
                 }
-            } 
+            }
         }
     }
 }
-.header-menu { 
-    display: flex; 
+.header-menu {
+    display: flex;
     justify-content:flex-end;
     .dropdown {
         line-height: 55px;
         margin-top: 0 !important;
         .dropdown-toggle {
-            line-height: 55px; 
+            line-height: 55px;
         }
-    } 
+    }
 }
 .user-area {
    .dropdown-toggle {
         position: relative;
-        z-index: 0; 
+        z-index: 0;
         &:before{
             content: "";
             position: absolute;
@@ -933,7 +932,7 @@ header .form-inline {
             height: 11px;
             border-radius: 100%;
             border: 2px  solid white;
-            z-index: 1; 
+            z-index: 1;
         }
         &.active:before {
             background: $active-green;
@@ -967,11 +966,11 @@ header .form-inline {
 .user-area {
     float: right;
     padding-right: 0;
-    position: relative; 
+    position: relative;
     padding-left: 20px;
     .user-menu {
         background: $header-bg;
-        border: none; 
+        border: none;
         left: inherit !important;
         right: 0;
         top: 54px !important;
@@ -1087,26 +1086,26 @@ header .form-inline {
     padding: 0;
     border: 0px solid transparent;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-    
+
     .box-title {
-        font-weight: 600; 
+        font-weight: 600;
         font-size: 1em;
         padding: 5px 0;
     }
     .weather-title {
         &.box-title{
             padding: 0 15px;
-            line-height: 50px; 
+            line-height: 50px;
             background: $white;
             border-radius: 5px 5px 0 0;
-        } 
+        }
     }
-    &.weather-box { 
+    &.weather-box {
         .card-body {
             padding-top: 0;
         }
         .top {
-            background: #eceff1; 
+            background: #eceff1;
             margin-left: -20px;
             margin-right: -20px;
             padding: 20px;
@@ -1120,29 +1119,29 @@ header .form-inline {
                 &:before {
                     font-size:60px;
                 }
-            } 
+            }
             .updates {
-                font-size:14px; 
+                font-size:14px;
                 text-align: right;
             }
             .currently {
-                font-size:22px; 
+                font-size:22px;
                 text-align: right;
             }
         }
         .middle {
             clear: both;
             position: relative;
-            height: 80px;  
+            height: 80px;
             color: #333648;
-            .city {   
+            .city {
                 padding-top: 15px;
                 width: 100%;
                 font-weight: 700;
                 font-size: 16px;
                 span {
                     font-size: 14px;
-                    display: block; 
+                    display: block;
                     font-weight: 400;
                 }
             }
@@ -1155,16 +1154,16 @@ header .form-inline {
                     font-size: 16px;
                 }
             }
-        } 
+        }
         .nextdays {
             clear: both;
             padding-top: 22px;
-            text-align: center; 
+            text-align: center;
             margin-left: -20px;
             margin-right: -20px;
             border-top: 1px solid #ededed;
             background: $white;
-            font-family: $default-font;  
+            font-family: $default-font;
             .days {
                 display: inline-block;
                 width: 20%;
@@ -1173,10 +1172,10 @@ header .form-inline {
                     display: block;
                 }
             }
-        } 
+        }
 
     }
- 
+
     .card-top,
     .card-footer {
         background: #fafafa;
@@ -1213,27 +1212,27 @@ header .form-inline {
             }
         }
         &.bg-flat-color-1 {
-            background: #5c6bc0; 
+            background: #5c6bc0;
             border: none;
         }
         &.bg-flat-color-2 {
-            background: #42a5f5; 
+            background: #42a5f5;
             border: none;
         }
         &.bg-flat-color-3 {
-            background: #ffa726; 
+            background: #ffa726;
             border: none;
         }
         &.bg-flat-color-4 {
-            background: #ef5350; 
+            background: #ef5350;
             border: none;
         }
         &.bg-flat-color-5 {
-            background: #4dbd74; 
+            background: #4dbd74;
             border: none;
         }
         &.bg-flat-color-6 {
-            background: #66bb6a; 
+            background: #66bb6a;
             border: none;
         }
     }
@@ -1330,22 +1329,22 @@ header .form-inline {
 //     top: 0;
 // }
 .traffic-chart .ct-area {
-  fill-opacity: .7; 
+  fill-opacity: .7;
 }
 .traffic-chart .ct-series-a .ct-area,
 .traffic-chart .ct-series-a .ct-slice-donut-solid,
 .traffic-chart .ct-series-a .ct-slice-pie {
-  fill: #66bb6a; 
+  fill: #66bb6a;
 }
 .traffic-chart .ct-series-b .ct-area,
 .traffic-chart .ct-series-b .ct-slice-donut-solid,
 .traffic-chart .ct-series-b .ct-slice-pie {
-  fill: #ef5350; 
+  fill: #ef5350;
 }
 .traffic-chart .ct-series-c .ct-area,
 .traffic-chart .ct-series-c .ct-slice-donut-solid,
 .traffic-chart .ct-series-c .ct-slice-pie {
-  fill: #5c6bc0; 
+  fill: #5c6bc0;
 }
 
 .flotRealtime2 {
@@ -1523,15 +1522,15 @@ header .form-inline {
         }
     }
 }
-.custom-tab .nav-tabs > a.active, 
-.custom-tab .nav-tabs > .active > a:focus, 
+.custom-tab .nav-tabs > a.active,
+.custom-tab .nav-tabs > .active > a:focus,
 .custom-tab .nav-tabs > li.active > a:hover {
     border-color: transparent transparent;
     color: #ff2e44;
     position: relative;
 }
-.custom-tab .nav-tabs > a.active:after, 
-.custom-tab .nav-tabs > li.active > a:focus:after, 
+.custom-tab .nav-tabs > a.active:after,
+.custom-tab .nav-tabs > li.active > a:focus:after,
 .custom-tab .nav-tabs > li.active > a:hover:after{
     background: #ff2e44;
     bottom: -1px;
@@ -1611,7 +1610,7 @@ header .form-inline {
 .corner-ribon i {
     padding: 10px 0 0 35px;
     color: #fff;
-} 
+}
 .twt-feed .wtt-mark {
     color: rgba(255,255,255,0.15);
     font-size: 160px;
@@ -2091,27 +2090,27 @@ header .form-inline {
 
 /*    Widget Five
 ---------------------------*/
-.stat-widget-five { 
+.stat-widget-five {
     min-height: 60px;
     .stat-icon {
         font-size: 50px;
         line-height: 50px;
         position: absolute;
         left: 30px;
-        top: 20px; 
-    } 
-    .stat-content { 
+        top: 20px;
+    }
+    .stat-content {
         margin-left: 100px;
     }
     .stat-text {
         color: $text-color-2 ;
         font-size: 20px;
     }
-    .stat-heading { 
-        color:$text-color-1 ; 
-        font-size: 14px; 
-    }  
-}   
+    .stat-heading {
+        color:$text-color-1 ;
+        font-size: 14px;
+    }
+}
 
 
 
@@ -2126,7 +2125,7 @@ header .form-inline {
   right: 0;
   width: 1px;
 }
- 
+
 
 /* Mixed Styles */
 
@@ -2204,16 +2203,16 @@ footer.site-footer {
         left: 0;
         h2{
            font-size: 16px;
-           font-weight: 700; 
-        } 
+           font-weight: 700;
+        }
     }
     td {
         .fc-event{
             border: 0px solid transparent;
             padding: 1px;
-        } 
+        }
         .fc-time {
-            color: white;    
+            color: white;
             font-weight: 400;
             font-size: 11px;
             padding: 2px;
@@ -2237,7 +2236,7 @@ footer.site-footer {
                 }
                 .fc-icon {
                     font-size: 11px;
-                } 
+                }
                 &:hover {
                     background: #d8d8d8;
                 }
@@ -2256,7 +2255,7 @@ footer.site-footer {
         }
         .fc-today-button {
             display: none;
-        }  
+        }
         .fc-widget-content {
             height: 45px!important;
             min-height: 45px!important;
@@ -2265,11 +2264,11 @@ footer.site-footer {
             max-height: 250px!important;
             overflow: hidden!important;
         }
-    } 
+    }
 }
 
 
-// Responsive Styles 
+// Responsive Styles
 
 @media (max-width: 1680px) {
     .timeline li {
@@ -2326,8 +2325,8 @@ footer.site-footer {
     }
 }
 
-@media (max-width: 1368px) { 
-     
+@media (max-width: 1368px) {
+
 }
 
 @media (max-width: 1024px) {
@@ -2336,7 +2335,7 @@ footer.site-footer {
             width: 280px;
             max-width: 280px;
         }
-    }   
+    }
     aside.left-panel:hover {
         overflow-x: inherit;
     }
@@ -2462,7 +2461,7 @@ footer.site-footer {
 
 
 
-        &.open-menu { 
+        &.open-menu {
             max-width: 280px;
             width: 280px;
 
@@ -2495,7 +2494,7 @@ footer.site-footer {
             }
 
         }
-    }     
+    }
 
 
 
@@ -2504,8 +2503,8 @@ footer.site-footer {
 
 
     .navbar .main-menu {
-        padding: 0; 
-    } 
+        padding: 0;
+    }
     #language-select,
     .user-area .dropdown-toggle,
     header .form-inline {
@@ -2519,7 +2518,7 @@ footer.site-footer {
     }
     .user-area .user-menu {
         top: 51px !important;
-    }  
+    }
     .content {
         padding: 1.25em;
         // div[class*="col"] {
@@ -2616,7 +2615,7 @@ footer.site-footer {
     footer.site-footer {
         padding: 0 1.125em;
         .footer-inner {
-            padding: 1.75em 1em;        
+            padding: 1.75em 1em;
         }
     }
 }
@@ -2629,8 +2628,8 @@ footer.site-footer {
 
 
 
- 
-@media (max-width: 768px) {  
+
+@media (max-width: 768px) {
     .navbar {
         height: 100vh;
         .navbar-nav li.menu-item-has-children>a:before {
@@ -2640,7 +2639,7 @@ footer.site-footer {
             float: none;
             padding-bottom: 70px;
         }
-    } 
+    }
     .left-panel {
         display: none;
     }
@@ -2706,20 +2705,20 @@ footer.site-footer {
         overflow: hidden;
 
     }
-    .order-table { 
+    .order-table {
          .avatar, .serial {
             display: none;
-        } 
+        }
     }
-} 
+}
 
 
-@media (max-width: 575px) {   
-    #left-panel { 
-        .navbar { 
+@media (max-width: 575px) {
+    #left-panel {
+        .navbar {
             display: inherit;
             .main-menu {
-                display: inherit; 
+                display: inherit;
             }
             .sub-menu.children {
                 display: none;
@@ -2752,7 +2751,7 @@ footer.site-footer {
 #cellPaiChart  {
     height: 160px;
     .pieLabel {
-        
+
         top: 50px!important;
         div {
             font-size: 16px!important;
@@ -2765,4 +2764,4 @@ footer.site-footer {
         left: inherit !important;
         right: 20px !important;
     }
-} 
+}

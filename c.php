@@ -6,6 +6,7 @@
 //if(!$user->is_logged_in()){ header('Location: login.php'); exit(); }
 // Sanitize $_GET parameters to avoid XSS and other attacks
 // Databse Conn
+
 if(!$user->is_logged_in()){
 $AVAILABLE_PAGES = array('index','beichten','view','changelog','kontaktanzeigen','404','wartung','datenschutz','impressum','agb');
 } elseif ($user->is_logged_in()){
@@ -182,25 +183,30 @@ $ip = get_client_ip();
         <!-- Header-->
         <header id="header" class="header">
             <div class="top-left">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="./"><h2>Deine Beichte</h2></a>
-                    <a class="navbar-brand hidden" href="./"><h2>B</h2></a>
+              <div class="header-menu">
+                    <p class="navbar-brand">Deinebeichte.com</p>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+
                 </div>
             </div>
-    <!--        <div class="top-right">
-                <div class="header-menu">
-                    <div class="header-left">
-                        <button class="search-trigger"><i class="fa fa-search"></i></button>
-                        <div class="form-inline">
-                            <form class="search-form">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
-                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                  </div>
-            </div> -->
+<style type="text/css">
+/* Landscape phones and down */
+@media (max-width: 600px) {
+    .bigheader    {
+      display: none;
+    }
+}
+
+</style>
+      <div class="top-right bigheader">
+            <div class="header-menu">
+                <div class="header-left">
+                  <form method="post">
+                    <a href="logout.php"><i class="fa fa-sign-out menutoggle" aria-hidden="true"></i></a>
+                  </form>
+                </div>
+              </div>
+            </div>
         </header>
         <!-- /#header -->
         <!-- Content -->
@@ -240,6 +246,8 @@ $ip = get_client_ip();
           @include './c/agb.php';
         } elseif ($c=='users'){
           @include './c/users.php';
+        } elseif ($c==$search){
+          @include $search;
         }
         ?>
             </div>
