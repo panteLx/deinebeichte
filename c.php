@@ -202,7 +202,11 @@ $ip = get_client_ip();
             <div class="header-menu">
                 <div class="header-left">
                   <form method="post">
+                    <?php if($user->is_logged_in()){ ?>
                     <a href="logout.php"><i class="fa fa-sign-out menutoggle" aria-hidden="true"></i></a>
+                  <?php } elseif(!$user->is_logged_in()){ ?>
+                    <a href="login.php"><i class="fa fa-sign-in menutoggle" aria-hidden="true"></i></a>
+                  <?php } ?>
                   </form>
                 </div>
               </div>
