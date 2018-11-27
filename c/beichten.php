@@ -67,7 +67,7 @@
 		<div class="card-body">
 			<div class="card-title">
       <span class="badge badge-danger float-right mt-1"><?php echo $crow['Time']; ?></span>
-			<h2><a href="./c.php?page=view&id=<?php echo $crow[ID]; ?>"><?php echo $crow['Headline']; ?></a></h2>
+			<h2><a href="./c.php?c=view&id=<?php echo $crow[ID]; ?>"><?php echo $crow['Headline']; ?></a></h2>
 			</div><!--news_item_title-->
 				<div class="card-content">
 				<i><?php $cleanout = str_replace("\n", '<br />', $crow['Message']); echo $cleanout;  ?></i>
